@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery &amp; Visual Archives | Prof. Zain H. Yamani · KFUPM</title>
+    <meta name="description" content="Visual archives of Prof. Zain H. Yamani's research labs, laser spectroscopy systems, royal honors, workshops, and physics artwork at KFUPM.">
+    <meta name="theme-color" content="#277E3C">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../index.css">
+    <script src="../site.js" defer></script>
+</head>
+<body data-page="gallery">
+    <div class="scroll-progress"></div>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="../index.html"><span class="logo-mark">ZY</span><span class="logo-text"><strong>Dr. Zain Yamani</strong><small>Physics · KFUPM</small></span></a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html" data-nav="home"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="../research/Research.html" data-nav="research"><i class="fa-solid fa-atom"></i>Research</a></li>
+                    <li><a href="../teaching/Teaching.html" data-nav="teaching"><i class="fa-solid fa-chalkboard-user"></i>Teaching</a></li>
+                    <li><a href="../presentations/Presentations.html" data-nav="presentations"><i class="fa-solid fa-person-chalkboard"></i>Talks</a></li>
+                    <li><a href="Gallery.html" data-nav="gallery" class="active"><i class="fa-solid fa-images"></i>Gallery</a></li>
+                    <li><a href="../personal/personal.htm" data-nav="personal"><i class="fa-solid fa-id-badge"></i>Profile</a></li>
+                    <li><a href="../interesting%20link/interesting_physics_links.html" data-nav="links"><i class="fa-solid fa-link"></i>Links</a></li>
+                    <li><a href="../Arabic/Arabic.html" class="btn-arabic" data-nav="arabic">عربي</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ================= HERO ================= -->
+        <section class="page-hero">
+            <canvas id="hero-canvas" class="page-hero-canvas" data-tone="light" aria-hidden="true"></canvas>
+            <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
+            <i class="fa-solid fa-images hero-icon" aria-hidden="true"></i>
+            <div class="container">
+                <div class="crumbs" data-reveal="down">
+                    <a href="../index.html"><i class="fa-solid fa-house"></i> Home</a>
+                    <i class="fa-solid fa-chevron-right" style="font-size:.7rem"></i>
+                    <span>Photo Gallery</span>
+                </div>
+                <h1 data-reveal="up">Visual Archives &amp; Gallery</h1>
+                <p data-reveal="up" style="--d:.1s">A curated photographic journey through three decades of laser spectroscopy, nanotechnology laboratories, academic milestones, student workshops, and the beauty of physics.</p>
+                <div class="chips" data-reveal="up" style="--d:.2s">
+                    <span class="chip"><i class="fa-solid fa-flask"></i>Laboratory Setups</span>
+                    <span class="chip"><i class="fa-solid fa-award"></i>Honors &amp; Medals</span>
+                    <span class="chip"><i class="fa-solid fa-chalkboard-user"></i>Teaching &amp; Workshops</span>
+                    <span class="chip"><i class="fa-solid fa-wand-magic-sparkles"></i>Art of Physics</span>
+                    <span class="chip"><i class="fa-solid fa-atom"></i>Nanotechnology</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= STATS ================= -->
+        <div class="container stats-overlap">
+            <div class="stats" data-stagger=".1">
+                <div class="stat" data-reveal="up">
+                    <div class="stat-icon"><i class="fa-solid fa-camera"></i></div>
+                    <div class="stat-num"><span data-count="24">0</span><span class="suffix">+</span></div>
+                    <div class="stat-label">Archived Photos</div>
+                </div>
+                <div class="stat" data-reveal="up">
+                    <div class="stat-icon"><i class="fa-solid fa-layer-group"></i></div>
+                    <div class="stat-num"><span data-count="4">0</span></div>
+                    <div class="stat-label">Curated Themes</div>
+                </div>
+                <div class="stat" data-reveal="up">
+                    <div class="stat-icon"><i class="fa-solid fa-microscope"></i></div>
+                    <div class="stat-num"><span data-count="30">0</span><span class="suffix"> Yrs</span></div>
+                    <div class="stat-label">Scientific Heritage</div>
+                </div>
+                <div class="stat" data-reveal="up">
+                    <div class="stat-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    <div class="stat-num"><span data-count="100">0</span><span class="suffix">%</span></div>
+                    <div class="stat-label">Full HD Lightbox</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= GALLERY SECTION ================= -->
+        <section class="section" id="gallery-section">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow"><i class="fa-solid fa-photo-film"></i>Collections</span>
+                    <h2>Explore the <span class="hl">archive</span></h2>
+                    <p>Filter by domain or search for specific instruments, topics, or events. Click any photograph to view in full resolution.</p>
+                </div>
+
+                <!-- Toolbar: search & category pills -->
+                <div class="gallery-toolbar" data-reveal="up">
+                    <label class="gallery-search" for="gallery-search">
+                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                        <input type="search" id="gallery-search" placeholder="Search photos, equipment, topics..." autocomplete="off" aria-label="Search gallery">
+                    </label>
+                    <div class="gallery-filters" role="group" aria-label="Filter gallery by category">
+                        <button type="button" class="filter-btn gallery-filter-btn active" data-filter="all" id="g-filter-all" aria-pressed="true">All (24)</button>
+                        <button type="button" class="filter-btn gallery-filter-btn" data-filter="research" id="g-filter-research" aria-pressed="false"><i class="fa-solid fa-flask"></i>Research &amp; Labs</button>
+                        <button type="button" class="filter-btn gallery-filter-btn" data-filter="honors" id="g-filter-honors" aria-pressed="false"><i class="fa-solid fa-award"></i>Honors &amp; Milestones</button>
+                        <button type="button" class="filter-btn gallery-filter-btn" data-filter="teaching" id="g-filter-teaching" aria-pressed="false"><i class="fa-solid fa-chalkboard-user"></i>Teaching &amp; Workshops</button>
+                        <button type="button" class="filter-btn gallery-filter-btn" data-filter="art" id="g-filter-art" aria-pressed="false"><i class="fa-solid fa-wand-magic-sparkles"></i>Art of Physics</button>
+                    </div>
+                </div>
+
+                <p class="pub-count" id="gallery-count" aria-live="polite">Showing 24 of 24 photos</p>
+
+                <!-- Grid -->
+                <div class="gallery-grid" id="gallery-grid">
+
+                    <!-- ITEM 1: Laser Tables -->
+                    <article class="gallery-card" data-category="research" data-reveal="up">
+                        <div class="gallery-media">
+                            <span class="gallery-category-tag">Laboratory</span>
+                            <img src="../research/images and photos/100-0044.JPG" loading="lazy" data-lightbox alt="Pulsed laser optics table and spectrometer system">
+                            <div class="gallery-overlay"><span class="gallery-zoom-badge"><i class="fa-solid fa-expand"></i></span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <div>
+                                <h3>Pulsed Laser Spectrometer &amp; Optical Table</h3>
+                                <p>Custom optical delay lines, high-power pulsed Nd:YAG laser system, and motorized monochromator for spectroscopic characterization.</p>
+                            </div>
+                            <div class="gallery-meta">
+                                <span class="loc"><i class="fa-solid fa-location-dot"></i>KFUPM Laser Lab</span>
+                                <span class="chip">Laser Optics</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ITEM 2: PLD Chamber -->
+                    <article class="gallery-card" data-category="research" data-reveal="up">
+                        <div class="gallery-media">
+                            <span class="gallery-category-tag">Synthesis</span>
+                            <img src="../research/images and photos/PLD/16032010388.jpg" loading="lazy" data-lightbox alt="Pulsed Laser Deposition UHV vacuum chamber">
+                            <div class="gallery-overlay"><span class="gallery-zoom-badge"><i class="fa-solid fa-expand"></i></span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <div>
+                                <h3>Pulsed Laser Deposition (PLD) Chamber</h3>
+                                <p>Ultra-high vacuum chamber with multi-target carousel and optical viewports for thin film synthesis and metal oxide nanostructure growth.</p>
+                            </div>
+                            <div class="gallery-meta">
+                                <span class="loc"><i class="fa-solid fa-location-dot"></i>CENT Labs · KFUPM</span>
+                                <span class="chip">Thin Films</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ITEM 3: Royal Medal -->
+                    <article class="gallery-card" data-category="honors" data-reveal="up">
+                        <div class="gallery-media contain-fit">
+                            <span class="gallery-category-tag gold"><i class="fa-solid fa-crown"></i> Royal Honor</span>
+                            <img src="../imagespics/indexpics/img_0006.jpg" loading="lazy" data-lightbox alt="King Abdulaziz Medal of the First Class">
+                            <div class="gallery-overlay"><span class="gallery-zoom-badge"><i class="fa-solid fa-expand"></i></span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <div>
+                                <h3>King Abdulaziz Medal (First Class)</h3>
+                                <p>Awarded to Prof. Zain Yamani in recognition of groundbreaking scientific research, international patents, and academic leadership in the Kingdom.</p>
+                            </div>
+                            <div class="gallery-meta">
+                                <span class="loc"><i class="fa-solid fa-medal"></i>National Award</span>
+                                <span class="chip chip-gold">First Class</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ITEM 4: Silicon Nanocrystallites Photoluminescence -->
+                    <article class="gallery-card" data-category="research art" data-reveal="up">
+                        <div class="gallery-media">
+                            <span class="gallery-category-tag">Ph.D. Urbana</span>
+                            <img src="../research/images and photos/Si-photoluminescence.jpg" loading="lazy" data-lightbox alt="UV laser beam illuminating silicon nanocrystallite solution with bright blue emission">
+                            <div class="gallery-overlay"><span class="gallery-zoom-badge"><i class="fa-solid fa-expand"></i></span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <div>
+                                <h3>Blue Light from Silicon Nanocrystallites</h3>
+                                <p>A focused UV laser beam traversing a colloidal suspension of 1 nm silicon nanocrystallites, showing vibrant blue photoluminescence.</p>
+                            </div>
+                            <div class="gallery-meta">
+                                <span class="loc"><i class="fa-solid fa-university"></i>UIUC · Urbana-Champaign</span>
+                                <span class="chip">Nanocrystals</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ITEM 5: Laser Photocatalysis -->
+                    <article class="gallery-card" data-category="research" data-reveal="up">
+                        <div class="gallery-media">
+                            <span class="gallery-category-tag">Photochemistry</span>
+                            <img src="../research/images and photos/laser photocatalysis photos/14022010339.jpg" loading="lazy" data-lightbox alt="Laser excitation beam focused into photocatalytic reactor cell">
+                            <div class="gallery-overlay"><span class="gallery-zoom-badge"><i class="fa-solid fa-expand"></i></span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <div>
+                                <h3>Laser-Assisted Photocatalysis Reactor</h3>
+                                <p>High-energy laser irradiation targeted onto nanomaterial catalysts for water splitting and accelerated organic pollutant degradation.</p>
+                            </div>
+                            <div class="gallery-meta">
+                                <span class="loc"><i class="fa-solid fa-flask-vial"></i>KFUPM Chemistry/Physics</span>
+                                <span class="chip">Photocatalysis</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ITEM 6: Supersonic Jet Lab -->
+                    <article class="gallery-card" data-category="research" data-reveal="up">
+                        <div class="gallery-media">
+                            <span class="gallery-category-tag">Molecular Beams</span>
+                            <img src="../research/images and photos/jetlab ss1.jpg" loading="lazy" data-lightbox alt="Supersonic jet laboratory setup at KFUPM">
+                            <div class="gallery-overlay"><span class="gallery-zoom-badge"><i class="fa-solid fa-expand"></i></span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <div>
+                                <h3>Supersonic Molecular Jet Facility</h3>
+                                <p>Free-jet expansion spectroscopy of SO₂ molecules cooled to ultra-low vibrational and rotational temperatures with Prof. Fida Al-Adel.</p>
+                            </div>
+                            <div class="gallery-meta">
+                                <span class="loc"><i class="fa-solid fa-clock-rotate-left"></i>KFUPM · 2000–2001</span>
+                                <span class="chip">Supersonic Jet</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ITEM 7: CENT Establishment -->
+                    <article class="gallery-card" data-category="honors" data-reveal="up">
+                        <div class="gallery-media contain-fit">
+                            <span class="gallery-category-tag gold"><i class="fa-solid fa-building-columns"></i> Center of Excellence</span>
+                            <img src="../imagespics/indexpics/CENT logo (5-1430).jpg" loading="lazy" data-lightbox alt="Center of Excellence in Nanotechnology official logo and inauguration">
+                            <div class="gallery-overlay"><span class="gallery-zoom-badge"><i class="fa-solid fa-expand"></i></span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <div>
+                                <h3>Center of Excellence in Nanotechnology (CENT)</h3>
+                                <p>Founding Director (1430H–1439H / 2009–2018). Established world-class synthesis, electron microscopy, and cleanroom facilities at KFUPM.</p>
+                            </div>
+                            <div class="gallery-meta">
+                                <span class="loc"><i class="fa-solid fa-flag"></i>KFUPM Center</span>
+                                <span class="chip chip-gold">Director</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ITEM 8: Laser Photochemistry -->
+                    <article class="gallery-card" data-category="research" data-reveal="up">
+                        <div class="gallery-media">
+                            <span class="gallery-category-tag">Laser Chemistry</span>
+                            <img src="../research/images and photos/laser-chem-tech.jpg" loading="lazy" data-lightbox alt="Laser photochemistry laboratory with spectrometer and gas manifold">
+                            <div class="gallery-overlay"><span class="gallery-zoom-badge"><i class="fa-solid fa-expand"></i></span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <div>
+                                <h3>Laser Photochemistry &amp; Methane Conversion</h3>
+                                <p>Investigation of pulsed laser conversion of methane into higher hydrocarbons and green photocatalysts with Prof. M. A. Gondal.</p>
+                            </div>
+                            <div class="gallery-meta">
+                                <span class="loc"><i class="fa-solid fa-fire-flame-curved"></i>KFUPM Physics</span>
+                                <span class="chip">Methane</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ITEM 9: Classical Mechanics Workshop -->
+                    <article class="gallery-card" data-category="teaching" data-reveal="up">
+                        <div class="gallery-media contain-fit">
+                            <span class="gallery-category-tag">Workshop</span>
+                            <img src="../Arabic/Dawrat/ICM_1437_2/Day_1/1.jpg" loading="lazy" data-lightbox alt="Classical mechanics whiteboard derivations by Dr. Zain">
+                            <div class="gallery-overlay"><span class="gallery-zoom-badge"><i class="fa-solid fa-expand"></i></span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <div>
+                                <h3>Rotational Dynamics &amp; Tensor Derivations</h3>
+                                <p>Board notes from the Advanced Classical Mechanics Workshop (1437H): angular momentum matrices, inertia tensors, and rotating frames.</p>
+                            </div>
+                            <div class="gallery-meta">
+                                <span class="loc"><i class="fa-solid fa-chalkboard"></i>ICM 1437 Workshop</span>
+                                <span class="chip">Mechanics</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ITEM 10: Dual Beam SEM -->
+                    <article class="gallery-card" data-category="research" data-reveal="up">
+                        <div class="gallery-media">
+                            <span class="gallery-category-tag">Nanotechnology</span>
+                            <img src="../imagespics/indexpics/KFUPM dual beam SEM.jpg" loading="lazy" data-lightbox alt="KFUPM Dual Beam Focused Ion Beam and Scanning Electron Microscope">
+                            <div class="gallery-overlay"><span class="gallery-zoom-badge"><i class="fa-solid fa-expand"></i></span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <div>
+                                <h3>Dual-Beam FIB-SEM Facility</h3>
+                                <p>Focused ion beam nanofabrication and field-emission scanning electron microscope deployed for advanced nano-characterization at KFUPM.</p>
+                            </div>
+                            <div class="gallery-meta">
+                                <span class="loc"><i class="fa-solid fa-microscope"></i>CENT · KFUPM</span>
+                                <span class="chip">Microscopy</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ITEM 11: Gas Manifold & Reforming -->
+                    <article class="gallery-card" data-category="research" data-reveal="up">
+                        <div class="gallery-media">
+                            <span class="gallery-category-tag">Safety &amp; Reaction</span>
+                            <img src="../research/images and photos/100-0048.JPG" loading="lazy" data-lightbox alt="High-pressure gas manifold and reaction hood enclosure">
+                            <div class="gallery-overlay"><span class="gallery-zoom-badge"><i class="fa-solid fa-expand"></i></span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <div>
+                                <h3>High-Pressure Gas Manifold Enclosure</h3>
+                                <p>Specially engineered gas distribution cabinet housing hydrogen, methane, and carrier gases with automatic safety shut-off systems.</p>
+                            </div>
+                            <div class="gallery-meta">
+                                <span class="loc"><i class="fa-solid fa-shield-halved"></i>Safety Infrastructure</span>
+                                <span class="chip">H₂ Safety</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ITEM 12: High-Res TEM Nanocrystallites -->
+                    <article class="gallery-card" data-category="research art" data-reveal="up">
+                        <div class="gallery-media">
+                            <span class="gallery-category-tag">Nanostructures</span>
+                            <img src="../research/images and photos/tem-nanocrys.jpg" loading="lazy" data-lightbox alt="High-Resolution Transmission Electron Micrograph of silicon nanocrystallites">
+                            <div class="gallery-overlay"><span class="gallery-zoom-badge"><i class="fa-solid fa-expand"></i></span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <div>
+                                <h3>Atomic Lattice in Silicon Nanocrystallites</h3>
+                                <p>Transmission electron micrograph resolving single-crystal atomic planes and quantum-confined lattice structures in 1–3 nm particles.</p>
+                            </div>
+                            <div class="gallery-meta">
+                                <span class="loc"><i class="fa-solid fa-atom"></i>UIUC / KFUPM</span>
+                                <span class="chip">TEM Image</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ITEM 13: Circuits Handwritten Solution -->
+                    <article class="gallery-card" data-category="teaching" data-reveal="up">
+                        <div class="gallery-media contain-fit">
+                            <span class="gallery-category-tag">Teaching</span>
+                            <img src="../imagespics/indexpics/A-28-10.JPG" loading="lazy" data-lightbox alt="Handwritten solution of multiloop circuit with Kirchhoff's rules">
+                            <div class="gallery-overlay"><span class="gallery-zoom-badge"><i class="fa-solid fa-expand"></i></span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <div>
+                                <h3>Kirchhoff's Laws &amp; Multi-Loop Circuits</h3>
+                                <p>Pedagogical step-by-step resolution of multi-source DC circuits illustrating node equations, loop orientations, and sign conventions.</p>
+                            </div>
+                            <div class="gallery-meta">
+                                <span class="loc"><i class="fa-solid fa-bolt"></i>Physics 102</span>
+                                <span class="chip">Circuits</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ITEM 14: Non-Destructive Testing Poster -->
+                    <article class="gallery-card" data-category="honors" data-reveal="up">
+                        <div class="gallery-media contain-fit">
+                            <span class="gallery-category-tag">Symposium</span>
+                            <img src="../imagespics/indexpics/NDT_EM.jpg" loading="lazy" data-lightbox alt="Poster for Non-Destructive Testing lecture in Physics Festival">
+                            <div class="gallery-overlay"><span class="gallery-zoom-badge"><i class="fa-solid fa-expand"></i></span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <div>
+                                <h3>Physics Festival: Non-Destructive Testing</h3>
+                                <p>Official announcement poster for the KFUPM Physics Festival public lecture on electromagnetic testing principles and industrial inspection.</p>
+                            </div>
+                            <div class="gallery-meta">
+                                <span class="loc"><i class="fa-solid fa-calendar"></i>15 May 2006</span>
+                                <span class="chip">NDT Event</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ITEM 15: The Art of Physics -->
+                    <article class="gallery-card" data-category="art" data-reveal="up">
+                        <div class="gallery-media">
+                            <span class="gallery-category-tag">Aesthetic Physics</span>
+                            <img src="../imagespics/The_Art_of_Physics.jpg" loading="lazy" data-lightbox alt="The Art of Physics: conceptual collage of optics, atomic orbits, and cosmological geometry">
+                            <div class="gallery-overlay"><span class="gallery-zoom-badge"><i class="fa-solid fa-expand"></i></span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <div>
+                                <h3>The Art of Physics: Harmony of Scales</h3>
+                                <p>Visual composition connecting quantum orbitals, ray optics, planetary trajectories, and mathematical aesthetics in nature.</p>
+                            </div>
+                            <div class="gallery-meta">
+                                <span class="loc"><i class="fa-solid fa-palette"></i>Physics &amp; Art</span>
+                                <span class="chip">Conceptual</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ITEM 16: Plasma Discharge -->
+                    <article class="gallery-card" data-category="art" data-reveal="up">
+                        <div class="gallery-media">
+                            <span class="gallery-category-tag">Plasma Physics</span>
+                            <img src="../imagespics/Plasma_Ball_I_by_Cameo24.jpg" loading="lazy" data-lightbox alt="Streamer discharge filaments in a noble gas plasma globe">
+                            <div class="gallery-overlay"><span class="gallery-zoom-badge"><i class="fa-solid fa-expand"></i></span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <div>
+                                <h3>Dielectric Streamer Filaments</h3>
+                                <p>High-voltage radio-frequency excitation of low-pressure noble gases generating electric discharge streamers and glow plasma.</p>
+                            </div>
+                            <div class="gallery-meta">
+                                <span class="loc"><i class="fa-solid fa-bolt-lightning"></i>Plasma</span>
+                                <span class="chip">Gas Discharge</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ITEM 17: Green Laser Channel -->
+                    <article class="gallery-card" data-category="art" data-reveal="up">
+                        <div class="gallery-media">
+                            <span class="gallery-category-tag">Laser Optics</span>
+                            <img src="../imagespics/green_plasma_by_charly_v.jpg" loading="lazy" data-lightbox alt="Intense coherent green laser beam propagating through scattered fluorescent medium">
+                            <div class="gallery-overlay"><span class="gallery-zoom-badge"><i class="fa-solid fa-expand"></i></span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <div>
+                                <h3>Coherent Green Laser Excitation</h3>
+                                <p>532 nm frequency-doubled beam propagating through a scattering medium, showing beam collimation and stimulated emission.</p>
+                            </div>
+                            <div class="gallery-meta">
+                                <span class="loc"><i class="fa-solid fa-wand-magic-sparkles"></i>532 nm</span>
+                                <span class="chip">Coherence</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ITEM 18: Incline Brainteaser -->
+                    <article class="gallery-card" data-category="teaching" data-reveal="up">
+                        <div class="gallery-media contain-fit">
+                            <span class="gallery-category-tag">Brainteaser</span>
+                            <img src="../teaching/phys-101/braintweezer/balls up incline.jpg" loading="lazy" data-lightbox alt="Physics brainteaser: balls rolling and sliding up an incline">
+                            <div class="gallery-overlay"><span class="gallery-zoom-badge"><i class="fa-solid fa-expand"></i></span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <div>
+                                <h3>Mechanics Puzzle: Spheres on an Incline</h3>
+                                <p>Rotational kinetic energy vs pure translation challenge: which object reaches the greatest vertical height given identical initial center-of-mass velocity?</p>
+                            </div>
+                            <div class="gallery-meta">
+                                <span class="loc"><i class="fa-solid fa-lightbulb"></i>Physics 101</span>
+                                <span class="chip">Challenge</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ITEM 19: Submarine Buoyancy Brainteaser -->
+                    <article class="gallery-card" data-category="teaching" data-reveal="up">
+                        <div class="gallery-media contain-fit">
+                            <span class="gallery-category-tag">Brainteaser</span>
+                            <img src="../teaching/phys-101/braintweezer/buoyancy submarine.jpg" loading="lazy" data-lightbox alt="Fluid mechanics brainteaser: submarine buoyancy in water">
+                            <div class="gallery-overlay"><span class="gallery-zoom-badge"><i class="fa-solid fa-expand"></i></span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <div>
+                                <h3>Fluid Mechanics: Submarine Buoyancy</h3>
+                                <p>Archimedes principle brainteaser analyzing buoyant equilibrium, pressure gradients, and stable buoyancy states in incompressible fluids.</p>
+                            </div>
+                            <div class="gallery-meta">
+                                <span class="loc"><i class="fa-solid fa-water"></i>Physics 101</span>
+                                <span class="chip">Buoyancy</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ITEM 20: Atwood Buoyancy Brainteaser -->
+                    <article class="gallery-card" data-category="teaching" data-reveal="up">
+                        <div class="gallery-media contain-fit">
+                            <span class="gallery-category-tag">Brainteaser</span>
+                            <img src="../teaching/physics brainteezers/Buoyancy in Atwood system/Buoyancy in Atwood system.jpg" loading="lazy" data-lightbox alt="Coupled Atwood pulley machine with submerged buoyant mass">
+                            <div class="gallery-overlay"><span class="gallery-zoom-badge"><i class="fa-solid fa-expand"></i></span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <div>
+                                <h3>Coupled Atwood System with Buoyancy</h3>
+                                <p>Equilibrium analysis of an Atwood machine with one cylinder partially submerged: finding acceleration and terminal tension.</p>
+                            </div>
+                            <div class="gallery-meta">
+                                <span class="loc"><i class="fa-solid fa-gear"></i>Advanced Mechanics</span>
+                                <span class="chip">Atwood Machine</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ITEM 21: Porous Silicon Microdots -->
+                    <article class="gallery-card" data-category="research" data-reveal="up">
+                        <div class="gallery-media contain-fit">
+                            <span class="gallery-category-tag">Nanofabrication</span>
+                            <img src="../imagespics/indexpics/p-si dot.jpg" loading="lazy" data-lightbox alt="Porous silicon photoluminescent microdots pattern">
+                            <div class="gallery-overlay"><span class="gallery-zoom-badge"><i class="fa-solid fa-expand"></i></span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <div>
+                                <h3>Porous Silicon Microdot Arrays</h3>
+                                <p>Micro-patterned electrochemical etching of crystalline silicon wafers producing photoluminescent quantum dots for sensor arrays.</p>
+                            </div>
+                            <div class="gallery-meta">
+                                <span class="loc"><i class="fa-solid fa-microchip"></i>Semiconductor Lab</span>
+                                <span class="chip">Porous Silicon</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ITEM 22: APS 2004 Invited Paper -->
+                    <article class="gallery-card" data-category="honors" data-reveal="up">
+                        <div class="gallery-media contain-fit">
+                            <span class="gallery-category-tag">Conference</span>
+                            <img src="../presentations/doing physics with Mathematica (web-version)/pics and figures/APS-2004-computers in physics education.jpg" loading="lazy" data-lightbox alt="American Physical Society March Meeting session presentation">
+                            <div class="gallery-overlay"><span class="gallery-zoom-badge"><i class="fa-solid fa-expand"></i></span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <div>
+                                <h3>APS March Meeting: Computational Physics</h3>
+                                <p>Session W38 presentation on integrating computer simulation, symbolic mathematics, and interactive models into undergraduate physics curriculum.</p>
+                            </div>
+                            <div class="gallery-meta">
+                                <span class="loc"><i class="fa-solid fa-globe"></i>APS March 2004</span>
+                                <span class="chip">Education</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ITEM 23: Optical Coherence -->
+                    <article class="gallery-card" data-category="art" data-reveal="up">
+                        <div class="gallery-media">
+                            <span class="gallery-category-tag">Optics</span>
+                            <img src="../imagespics/Laser_and_Bulb_1_by_TPatch.jpg" loading="lazy" data-lightbox alt="Comparison of coherent monochromatic laser radiation with incandescent bulb radiation">
+                            <div class="gallery-overlay"><span class="gallery-zoom-badge"><i class="fa-solid fa-expand"></i></span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <div>
+                                <h3>Coherent vs. Incoherent Illumination</h3>
+                                <p>Artistic juxtaposition of monochromatic spatial coherence emitted by lasers alongside the thermal spectrum of incandescent light bulbs.</p>
+                            </div>
+                            <div class="gallery-meta">
+                                <span class="loc"><i class="fa-solid fa-lightbulb"></i>Optics Studies</span>
+                                <span class="chip">Coherence</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ITEM 24: Solar Physics & Corona -->
+                    <article class="gallery-card" data-category="art" data-reveal="up">
+                        <div class="gallery-media">
+                            <span class="gallery-category-tag">Solar Physics</span>
+                            <img src="../imagespics/indexpics/sun.jpg" loading="lazy" data-lightbox alt="Solar disk with chromospheric flares and active prominence loops">
+                            <div class="gallery-overlay"><span class="gallery-zoom-badge"><i class="fa-solid fa-expand"></i></span></div>
+                        </div>
+                        <div class="gallery-info">
+                            <div>
+                                <h3>Solar Flares &amp; Magnetohydrodynamics</h3>
+                                <p>High-resolution solar telescope imagery of active solar flares, magnetic flux loops, and chromospheric coronal dynamics.</p>
+                            </div>
+                            <div class="gallery-meta">
+                                <span class="loc"><i class="fa-solid fa-sun"></i>Astrophysics</span>
+                                <span class="chip">Solar Physics</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Empty State -->
+                <div class="pub-empty" id="gallery-empty" hidden>
+                    <i class="fa-solid fa-image"></i>
+                    <p>No photographs found matching your query.</p>
+                    <button type="button" class="btn btn-secondary" id="gallery-reset"><i class="fa-solid fa-rotate-left"></i>Reset filters</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= COLLABORATE BANNER ================= -->
+        <section class="section section-join" id="gallery-cta">
+            <div class="container">
+                <div class="cta" data-reveal="zoom">
+                    <div class="cta-text">
+                        <span class="eyebrow eyebrow-light"><span class="dot"></span>Archive Submissions</span>
+                        <h2>Have lab photos or alumni workshop memories?</h2>
+                        <p>We are continuously documenting our research heritage at KFUPM. Former students, visiting researchers, and collaborators are welcome to share archival photos with the group.</p>
+                    </div>
+                    <div class="cta-actions">
+                        <a href="mailto:zhyamani@kfupm.edu.sa?subject=Yamani%20Group%20Gallery%20Photo%20Submission" class="btn btn-light" id="cta-gallery-send"><i class="fa-solid fa-upload"></i>Send Photo</a>
+                        <a href="../research/Research.html" class="btn btn-ghost-light" id="cta-gallery-research"><i class="fa-solid fa-atom"></i>Our Research</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <div class="logo"><a href="../index.html"><span class="logo-mark">ZY</span><span class="logo-text"><strong>Dr. Zain Yamani</strong><small>Physics · KFUPM</small></span></a></div>
+                <p>Professor of Physics, King Fahd University of Petroleum &amp; Minerals. Hydrogen technologies, carbon management &amp; energy materials.</p>
+            </div>
+            <div>
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="../research/Research.html"><i class="fa-solid fa-atom"></i>Research</a></li>
+                    <li><a href="../teaching/Teaching.html"><i class="fa-solid fa-chalkboard-user"></i>Teaching</a></li>
+                    <li><a href="../presentations/Presentations.html"><i class="fa-solid fa-person-chalkboard"></i>Talks</a></li>
+                    <li><a href="Gallery.html"><i class="fa-solid fa-images"></i>Gallery</a></li>
+                    <li><a href="../personal/personal.htm"><i class="fa-solid fa-id-badge"></i>Profile</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="../Nanotechnology/Nanotechnology.html"><i class="fa-solid fa-microscope"></i>Nanotechnology</a></li>
+                    <li><a href="../interesting%20link/interesting_physics_links.html"><i class="fa-solid fa-link"></i>Physics Links</a></li>
+                    <li><a href="../research/Publication%20List%20(Zain%20Yamani_2014).pdf"><i class="fa-solid fa-file-pdf"></i>Publication List</a></li>
+                    <li><a href="../Arabic/Arabic.html"><i class="fa-solid fa-language"></i>الصفحة العربية</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:zhyamani@kfupm.edu.sa"><i class="fa-solid fa-envelope"></i>zhyamani@kfupm.edu.sa</a></li>
+                    <li><a href="tel:+966138604363"><i class="fa-solid fa-phone"></i>+966 13 860 4363</a></li>
+                    <li><a href="https://www.kfupm.edu.sa" target="_blank" rel="noopener"><i class="fa-solid fa-location-dot"></i>KFUPM, Dhahran, KSA</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <span>&copy; <span data-year>2026</span> Prof. Zain H. Yamani. All rights reserved.</span>
+            <span>King Fahd University of Petroleum &amp; Minerals</span>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+</body>
+</html>

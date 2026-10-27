@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ar" class="no-js" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الشخصية - د. زين يماني</title>
+    <meta name="theme-color" content="#277E3C">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../index.css">
+    <script src="../site.js" defer></script>
+    <style>
+        body[dir="rtl"] {
+            font-family: 'Tajawal', sans-serif;
+            text-align: right;
+        }
+        body[dir="rtl"] .navbar .nav-links {
+            margin-right: auto;
+            margin-left: 0;
+        }
+        body[dir="rtl"] .hero-actions {
+            justify-content: flex-start;
+        }
+        body[dir="rtl"] .crumbs {
+            justify-content: flex-start;
+        }
+        body[dir="rtl"] .check-list li {
+            padding-left: 0;
+            padding-right: 1.5rem;
+        }
+        body[dir="rtl"] .check-list li i {
+            left: auto;
+            right: 0;
+        }
+        body[dir="rtl"] .icon-badge {
+            margin-left: 1rem;
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body data-page="arabic" dir="rtl">
+    <div class="scroll-progress"></div>
+    <header class="navbar" dir="ltr">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="../index.html">Dr. Zain Yamani</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">الرئيسية</a></li>
+                    <li><a href="../research/Research.html">الأبحاث</a></li>
+                    <li><a href="../teaching/Teaching.html">التدريس</a></li>
+                    <li><a href="../presentations/Presentations.html">المحاضرات</a></li>
+                    <li><a href="../gallery/Gallery.html">معرض الصور</a></li>
+                    <li><a href="../personal/personal.htm">السيرة الذاتية</a></li>
+                    <li><a href="../interesting link/interesting_physics_links.html">روابط مفيدة</a></li>
+                    <li><a href="../Arabic/Arabic.html" class="btn-arabic active">عربي</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <canvas id="hero-canvas" class="page-hero-canvas" data-tone="light" aria-hidden="true"></canvas>
+            <div class="container">
+                <div class="crumbs" data-reveal="down" style="flex-direction: row-reverse; display: flex; gap: 0.5rem;"><a href="../index.html"><i class="fa-solid fa-house"></i> الرئيسية</a><i class="fa-solid fa-chevron-left" style="font-size:.7rem"></i><span>النسخة العربية</span></div>
+                <h1 data-reveal="up" style="font-family: 'Tajawal', sans-serif;">أ.د. زين بن حسن يماني</h1>
+                <p data-reveal="up" style="--d:.1s; font-family: 'Tajawal', sans-serif;">أستاذ الفيزياء بجامعة الملك فهد للبترول والمعادن · باحث في تقنيات النانو والمواد المتقدمة</p>
+                <div class="hero-actions" data-reveal="up" style="--d:.2s; display: flex; gap: 1rem;">
+                    <a href="mailto:zhyamani@kfupm.edu.sa" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> تواصل معي</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow"><i class="fa-solid fa-graduation-cap"></i> التأهيل الأكاديمي</span>
+                    <h2 style="font-family: 'Tajawal', sans-serif;">التعليم <span class="hl">والشهادات</span></h2>
+                </div>
+                <div class="grid grid-3" data-stagger=".12">
+                    <div class="card feature-card" data-reveal="up">
+                        <div class="icon-badge gold"><i class="fa-solid fa-certificate"></i></div>
+                        <h3 style="font-family: 'Tajawal', sans-serif;">الدكتوراة في الفيزياء</h3>
+                        <p style="margin-top: 1rem; color: var(--text-main);">جامعة إلينوي في أوربانا شامبين (University of Illinois at Urbana-Champaign)، الولايات المتحدة (1999)</p>
+                    </div>
+                    <div class="card feature-card" data-reveal="up">
+                        <div class="icon-badge gold"><i class="fa-solid fa-certificate"></i></div>
+                        <h3 style="font-family: 'Tajawal', sans-serif;">الماجستير في الفيزياء</h3>
+                        <p style="margin-top: 1rem; color: var(--text-main);">جامعة إلينوي في أوربانا شامبين (1995) وجامعة الملك فهد للبترول والمعادن (1993)</p>
+                    </div>
+                    <div class="card feature-card" data-reveal="up">
+                        <div class="icon-badge gold"><i class="fa-solid fa-certificate"></i></div>
+                        <h3 style="font-family: 'Tajawal', sans-serif;">البكالوريوس في الفيزياء</h3>
+                        <p style="margin-top: 1rem; color: var(--text-main);">جامعة الملك فهد للبترول والمعادن (1991)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Activities Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow"><i class="fa-solid fa-microscope"></i> الأبحاث والنشاط العلمي</span>
+                    <h2 style="font-family: 'Tajawal', sans-serif;">نشاطات مختبر <span class="hl">الأبحاث</span></h2>
+                </div>
+                <div class="grid grid-2" data-stagger=".12">
+                    <div class="card feature-card" data-reveal="up">
+                        <div class="icon-badge"><i class="fa-solid fa-flask"></i></div>
+                        <h3 style="font-family: 'Tajawal', sans-serif;">أبحاثي</h3>
+                        <p style="margin-top: 1rem; color: var(--text-main);">التركيز على المواد المتقدمة، تقنيات النانو، واستخداماتها في الطاقة النظيفة والمستدامة.</p>
+                        <div style="margin-top: 1.5rem;">
+                            <a href="../research/Research-Arabic.html" class="btn btn-primary"><i class="fa-solid fa-arrow-left"></i> صفحة الأبحاث بالعربي</a>
+                        </div>
+                    </div>
+                    <div class="card feature-card" data-reveal="up">
+                        <div class="icon-badge"><i class="fa-solid fa-users-gear"></i></div>
+                        <h3 style="font-family: 'Tajawal', sans-serif;">ورش العمل</h3>
+                        <ul class="check-list" style="margin-top: 1rem;">
+                            <li><i class="fa-solid fa-chalkboard-user"></i> ورشة عمل في المفاهيم الفيزيائية البديلة (<a href="Wirash%203mal/wirash%203mal.html" class="text-link">بالخرج</a>، 25 ربيع ثاني، 1431 هـ)</li>
+                        </ul>
+                    </div>
+                    <div class="card feature-card" data-reveal="up">
+                        <div class="icon-badge"><i class="fa-solid fa-microphone-lines"></i></div>
+                        <h3 style="font-family: 'Tajawal', sans-serif;">مدرسة الفيزياء الصيفية</h3>
+                        <p style="margin-top: 1rem; color: var(--text-main);">نموذج من محاضرات ألقيتها في مدرسة الفيزياء الصيفية بإعداد الجمعية العلمية السعودية للعلوم الفيزيائية.</p>
+                        <div style="margin-top: 1.5rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                            <a href="STP-1430/properties%20of%20matter-STP-1430.pdf" class="btn btn-outline"><i class="fa-solid fa-file-pdf"></i> العرض المرئي</a>
+                            <a href="../presentations/presentation-audio/STP-1430%20(SPS%20summer%20school)%20Properties%20of%20Matter-1.wav" class="btn btn-outline"><i class="fa-solid fa-volume-high"></i> خواص المادة 1</a>
+                            <a href="../presentations/presentation-audio/STP-1430%20(SPS%20summer%20school)%20Properties%20of%20Matter-2.wav" class="btn btn-outline"><i class="fa-solid fa-volume-high"></i> خواص المادة 2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teaching Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow"><i class="fa-solid fa-chalkboard-user"></i> المقررات والتدريس</span>
+                    <h2 style="font-family: 'Tajawal', sans-serif;">النشاط <span class="hl">التعليمي</span></h2>
+                </div>
+                <div class="grid grid-3" data-stagger=".12">
+                    <a href="Dawrat/Introduction%20to%20Lagrangian%20and%20Hamiltonian%20Mechanics/Introduction%20to%20Lagrangian%20and%20Hamiltonian%20Mechanics.html" class="card feature-card" data-reveal="up" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
+                        <div class="icon-badge"><i class="fa-solid fa-gear"></i></div>
+                        <h3 style="font-family: 'Tajawal', sans-serif;">ميكانيكا لاجرانج و هاملتون</h3>
+                        <p style="margin-top: 1rem; color: var(--text-main);">دورة قصيرة مقدمة في ميكانيكا لاجرانج و هاملتون.</p>
+                    </a>
+                    <a href="Dawrat/Mathematical%20Applications%20for%20Experimental%20Physics/Mathematical%20Applications%20for%20Experimental%20Physics.html" class="card feature-card" data-reveal="up" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
+                        <div class="icon-badge"><i class="fa-solid fa-square-root-variable"></i></div>
+                        <h3 style="font-family: 'Tajawal', sans-serif;">التطبيقات الرياضية</h3>
+                        <p style="margin-top: 1rem; color: var(--text-main);">سلسلة محاضرات حول التطبيقات الرياضية للفيزياء التجريبية.</p>
+                    </a>
+                    <a href="Dawrat/Introductory%20Electronics/intro%20electronics%20web-site.html" class="card feature-card" data-reveal="up" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
+                        <div class="icon-badge"><i class="fa-solid fa-microchip"></i></div>
+                        <h3 style="font-family: 'Tajawal', sans-serif;">أساسيات الإلكترونيات</h3>
+                        <p style="margin-top: 1rem; color: var(--text-main);">دورة تأسيسية في مبادئ الإلكترونيات.</p>
+                    </a>
+                    <a href="Dawrat/Oscillaitons%20and%20Waves/oscillations%20and%20waves%20web-site.html" class="card feature-card" data-reveal="up" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
+                        <div class="icon-badge"><i class="fa-solid fa-wave-square"></i></div>
+                        <h3 style="font-family: 'Tajawal', sans-serif;">الاهتزازات والموجات</h3>
+                        <p style="margin-top: 1rem; color: var(--text-main);">دورة إلكترونية في أساسيات الاهتزازات والموجات.</p>
+                    </a>
+                    <a href="Dawrat/Physics%20Review-1434-SPS/PR-1434-SPS.html" class="card feature-card" data-reveal="up" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
+                        <div class="icon-badge gold"><i class="fa-solid fa-clipboard-question"></i></div>
+                        <h3 style="font-family: 'Tajawal', sans-serif;">مراجعة لأساسيات الفيزياء</h3>
+                        <p style="margin-top: 1rem; color: var(--text-main);">نشاط وأسئلة مراجعة لأساسيات الفيزياء (حديث!).</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow"><i class="fa-solid fa-users"></i> أنشطة المجتمع</span>
+                    <h2 style="font-family: 'Tajawal', sans-serif;">الجمعيات <span class="hl">والمسابقات</span></h2>
+                </div>
+                <div class="grid grid-2" data-stagger=".12">
+                    <div class="card feature-card" data-reveal="up">
+                        <div class="icon-badge"><i class="fa-solid fa-building-ngo"></i></div>
+                        <h3 style="font-family: 'Tajawal', sans-serif;">الجمعية العلمية السعودية للعلوم الفيزيائية</h3>
+                        <ul class="check-list" style="margin-top: 1rem;">
+                            <li><i class="fa-solid fa-user-tie"></i> أنشطة فرع المعلمين</li>
+                            <li><i class="fa-solid fa-user-graduate"></i> أنشطة الفرع الطلابي</li>
+                        </ul>
+                    </div>
+                    <div class="card feature-card" data-reveal="up">
+                        <div class="icon-badge gold"><i class="fa-solid fa-trophy"></i></div>
+                        <h3 style="font-family: 'Tajawal', sans-serif;">مسابقة الفاكهة الفيزيائية</h3>
+                        <p style="margin-top: 1rem; color: var(--text-main);">على جروب قسم المعلمين والفرع الطلابي بالجمعية العلمية السعودية للعلوم الفيزيائية.</p>
+                        <div style="margin-top: 1.5rem;">
+                            <a href="Musabaqat/Fakihat%20Al-Fisya'a/Fakihat%20Al-Fisya'a%20web-site.html" class="btn btn-outline"><i class="fa-solid fa-link"></i> صفحة المسابقة</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center" style="margin-top: 3rem;" data-reveal="up">
+                    <a href="misc/misc.html" class="btn btn-primary" style="font-family: 'Tajawal', sans-serif; font-size: 1.1rem; padding: 0.75rem 2rem;"><i class="fa-solid fa-book-open"></i> كشكول ومنوعات</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer dir="ltr">
+        <div class="container footer-container">
+            <p>&copy; 2026 Dr. Zain Yamani. All Rights Reserved.</p>
+            <p><a href="http://www.kfupm.edu.sa">King Fahd University of Petroleum and Minerals (KFUPM)</a></p>
+        </div>
+    </footer>
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+</body>
+</html>

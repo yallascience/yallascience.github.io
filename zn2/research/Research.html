@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamani Research Group | Hydrogen, Carbon &amp; Energy · KFUPM</title>
+    <meta name="description" content="Yamani Research Group at KFUPM & IRC-HTCM: hydrogen production and storage, Pd membrane separation, electrocatalysis, Ni–Zn batteries, DFT modeling and machine learning.">
+    <meta name="theme-color" content="#277E3C">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../index.css">
+    <script src="../site.js" defer></script>
+</head>
+<body data-page="research">
+    <div class="scroll-progress"></div>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="../index.html"><span class="logo-mark">ZY</span><span class="logo-text"><strong>Dr. Zain Yamani</strong><small>Physics · KFUPM</small></span></a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html" data-nav="home"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="../research/Research.html" data-nav="research"><i class="fa-solid fa-atom"></i>Research</a></li>
+                    <li><a href="../teaching/Teaching.html" data-nav="teaching"><i class="fa-solid fa-chalkboard-user"></i>Teaching</a></li>
+                    <li><a href="../presentations/Presentations.html" data-nav="presentations"><i class="fa-solid fa-person-chalkboard"></i>Talks</a></li>
+                    <li><a href="../gallery/Gallery.html" data-nav="gallery"><i class="fa-solid fa-images"></i>Gallery</a></li>
+                    <li><a href="../personal/Personal%20Information.html" data-nav="personal"><i class="fa-solid fa-id-badge"></i>Profile</a></li>
+                    <li><a href="../interesting%20link/interesting_physics_links.html" data-nav="links"><i class="fa-solid fa-link"></i>Links</a></li>
+                    <li><a href="../Arabic/Arabic.html" class="btn-arabic" data-nav="arabic">عربي</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ================= PAGE HERO ================= -->
+        <section class="page-hero">
+            <canvas id="hero-canvas" class="page-hero-canvas" data-tone="light" aria-hidden="true"></canvas>
+            <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
+            <i class="fa-solid fa-atom hero-icon" aria-hidden="true"></i>
+            <div class="container">
+                <div class="crumbs" data-reveal="down"><a href="../index.html"><i class="fa-solid fa-house"></i> Home</a><i class="fa-solid fa-chevron-right" style="font-size:.7rem"></i><span>Research</span></div>
+                <h1 data-reveal="up">Yamani Research Group</h1>
+                <p data-reveal="up" style="--d:.1s">KFUPM · Department of Physics &amp; IRC-HTCM. Pioneering the science behind sustainable hydrogen economies and next-generation energy storage.</p>
+                <div class="chips" data-reveal="up" style="--d:.2s">
+                    <span class="chip"><i class="fa-solid fa-fire-flame-curved"></i>Hydrogen</span>
+                    <span class="chip"><i class="fa-solid fa-recycle"></i>Carbon Management</span>
+                    <span class="chip"><i class="fa-solid fa-car-battery"></i>Energy Storage</span>
+                    <span class="chip"><i class="fa-solid fa-industry"></i>Reactor Design</span>
+                    <span class="chip"><i class="fa-solid fa-cubes"></i>DFT</span>
+                    <span class="chip"><i class="fa-solid fa-brain"></i>Machine Learning</span>
+                </div>
+                <div class="hero-actions" data-reveal="up" style="--d:.3s">
+                    <a href="#focus" class="btn btn-light" id="hero-explore-btn"><i class="fa-solid fa-compass"></i>Explore our research</a>
+                    <a href="#join" class="btn btn-ghost-light" id="hero-join-btn"><i class="fa-solid fa-handshake"></i>Collaborate with us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= STATS ================= -->
+        <div class="container stats-overlap">
+            <div class="stats" data-stagger=".1">
+                <div class="stat" data-reveal="up"><div class="stat-icon"><i class="fa-solid fa-book-open"></i></div><div class="stat-num"><span data-count="250">250</span><span class="suffix">+</span></div><div class="stat-label">Publications</div></div>
+                <div class="stat" data-reveal="up"><div class="stat-icon"><i class="fa-solid fa-user-graduate"></i></div><div class="stat-num"><span data-count="5">0</span></div><div class="stat-label">Researchers</div></div>
+                <div class="stat" data-reveal="up"><div class="stat-icon"><i class="fa-solid fa-sack-dollar"></i></div><div class="stat-num"><span data-count="100">0</span><span class="suffix">K</span></div><div class="stat-label">SAR in Active Grants</div></div>
+                <div class="stat" data-reveal="up"><div class="stat-icon"><i class="fa-solid fa-handshake"></i></div><div class="stat-num"><span data-count="100">0</span><span class="suffix">+</span></div><div class="stat-label">Collaborations</div></div>
+            </div>
+        </div>
+
+        <!-- ================= SECTION SUB-NAV (scrollspy) ================= -->
+        <nav class="subnav" id="research-subnav" aria-label="Page sections">
+            <div class="container">
+                <ul class="subnav-links">
+                    <li><a href="#about" id="subnav-about"><i class="fa-solid fa-people-group"></i>About</a></li>
+                    <li><a href="#focus" id="subnav-focus"><i class="fa-solid fa-flask-vial"></i>Focus</a></li>
+                    <li><a href="#team" id="subnav-team"><i class="fa-solid fa-users"></i>Team</a></li>
+                    <li><a href="#capabilities" id="subnav-capabilities"><i class="fa-solid fa-screwdriver-wrench"></i>Capabilities</a></li>
+                    <li><a href="#publications" id="subnav-publications"><i class="fa-solid fa-book-open"></i>Publications</a></li>
+                    <li><a href="#roadmap" id="subnav-roadmap"><i class="fa-solid fa-road"></i>Roadmap</a></li>
+                    <li><a href="#vision" id="subnav-vision"><i class="fa-solid fa-eye"></i>Vision</a></li>
+                    <li><a href="#history" id="subnav-history"><i class="fa-solid fa-clock-rotate-left"></i>Heritage</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- ================= ABOUT ================= -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow"><i class="fa-solid fa-people-group"></i>Who We Are</span>
+                    <h2>A <span class="hl">multidisciplinary</span> team</h2>
+                    <p>We fuse experimental synthesis, electrochemical testing, DFT simulation, multiphysics modeling and machine learning to accelerate materials discovery and reactor design.</p>
+                </div>
+                <div class="grid grid-3" data-stagger=".12">
+                    <div class="card feature-card" data-reveal="up"><div class="icon-badge"><i class="fa-solid fa-bullseye"></i></div><h3>Our Mission</h3><p>Advancing clean hydrogen and sustainable energy technologies through bold experimental and computational research — from lab-scale insights to global-scale impact.</p></div>
+                    <div class="card feature-card" data-reveal="up"><div class="icon-badge gold"><i class="fa-solid fa-building-columns"></i></div><h3>Affiliation</h3><p>Department of Physics &amp; IRC-HTCM (Interdisciplinary Research Center for Hydrogen Technologies and Carbon Management), KFUPM, Saudi Arabia.</p></div>
+                    <div class="card feature-card" data-reveal="up"><div class="icon-badge"><i class="fa-solid fa-gears"></i></div><h3>Our Approach</h3><p>Experiment + theory + data: synthesis, electrochemistry, DFT, COMSOL multiphysics and ML pipelines working in one loop.</p></div>
+                </div>
+
+                <div class="pipeline" style="margin-top:4.5rem" data-stagger=".15">
+                    <div class="pipe-step" data-reveal="up"><div class="pipe-icon" style="--d:0s"><i class="fa-solid fa-flask"></i></div><h4>Production</h4><p>SMR · WGS · Oil shale</p></div>
+                    <div class="pipe-step" data-reveal="up"><div class="pipe-icon" style="--d:.6s"><i class="fa-solid fa-filter"></i></div><h4>Separation</h4><p>Pd membranes</p></div>
+                    <div class="pipe-step" data-reveal="up"><div class="pipe-icon" style="--d:1.2s"><i class="fa-solid fa-battery-full"></i></div><h4>Storage</h4><p>H₂ &amp; batteries</p></div>
+                    <div class="pipe-step" data-reveal="up"><div class="pipe-icon" style="--d:1.8s"><i class="fa-solid fa-bolt"></i></div><h4>Utilization</h4><p>Electrocatalysis</p></div>
+                    <div class="pipe-step final" data-reveal="up"><div class="pipe-icon" style="--d:2.4s"><i class="fa-solid fa-leaf"></i></div><h4>Net Zero</h4><p>Carbon circularity</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FOCUS AREAS ================= -->
+        <section class="section section-alt" id="focus">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow"><i class="fa-solid fa-flask-vial"></i>Research</span>
+                    <h2>Six <span class="hl">focus areas</span></h2>
+                    <p>Interconnected pillars driving breakthrough discoveries at the frontier of clean-energy science.</p>
+                </div>
+                <div class="grid grid-3" data-stagger=".1">
+                    <article class="card feature-card" data-reveal="up" data-tilt><span class="num">01</span><div class="icon-badge"><i class="fa-solid fa-fire-flame-curved"></i></div><h3>Hydrogen Production &amp; Storage</h3><p>Steam methane reforming (SMR), water-gas shift (WGS), and advanced storage systems including oil-shale hydrogen extraction for domestic scalability.</p><div class="chips"><span class="chip">SMR</span><span class="chip">WGS</span><span class="chip">H₂ Storage</span><span class="chip">Oil Shale</span></div></article>
+                    <article class="card feature-card" data-reveal="up" data-tilt><span class="num">02</span><div class="icon-badge"><i class="fa-solid fa-filter"></i></div><h3>Pd Membrane Separation</h3><p>Palladium-based dense membranes for ultra-pure H₂ separation integrated with reforming reactors, plus YSZ-protected Pd membrane systems.</p><div class="chips"><span class="chip">Pd Membranes</span><span class="chip">H₂ Purity</span><span class="chip">YSZ</span><span class="chip chip-gold">Aramco Collab</span></div></article>
+                    <article class="card feature-card" data-reveal="up" data-tilt><span class="num">03</span><div class="icon-badge"><i class="fa-solid fa-bolt"></i></div><h3>Electrocatalysis (OER &amp; HER)</h3><p>Advanced electrocatalysts — FeP, NiP, NiFeP, Co/Mn-oxide systems — for oxygen and hydrogen evolution in alkaline and acidic media.</p><div class="chips"><span class="chip">OER</span><span class="chip">HER</span><span class="chip">FeP/NiP</span><span class="chip">Alkaline/Acidic</span></div></article>
+                    <article class="card feature-card" data-reveal="up" data-tilt><span class="num">04</span><div class="icon-badge"><i class="fa-solid fa-car-battery"></i></div><h3>Next-Gen Batteries</h3><p>Ni–Zn batteries with composite carbon/NiLDH cathodes; perovskite electrodes and zinc-ion batteries with additive engineering.</p><div class="chips"><span class="chip">Ni–Zn</span><span class="chip">Zinc-Ion</span><span class="chip">NiLDH</span><span class="chip">Perovskite</span></div></article>
+                    <article class="card feature-card" data-reveal="up" data-tilt><span class="num">05</span><div class="icon-badge"><i class="fa-solid fa-cubes"></i></div><h3>DFT Computational Modeling</h3><p>First-principles calculations with Quantum Espresso &amp; Open-MX for TMD nanostructures, photocatalytic water splitting and metal-sulfur batteries.</p><div class="chips"><span class="chip">Quantum Espresso</span><span class="chip">Open-MX</span><span class="chip">TMDs</span><span class="chip">COMSOL</span></div></article>
+                    <article class="card feature-card" data-reveal="up" data-tilt><span class="num">06</span><div class="icon-badge"><i class="fa-solid fa-brain"></i></div><h3>Machine Learning &amp; AI</h3><p>ML-guided screening of HER electrocatalysts, MATLAB regression, scikit-learn pipelines and predictive models for cathode quantum capacities.</p><div class="chips"><span class="chip">scikit-learn</span><span class="chip">MATLAB</span><span class="chip">HER Screening</span><span class="chip">DFT+ML</span></div></article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= TEAM ================= -->
+        <section class="section" id="team">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow"><i class="fa-solid fa-users"></i>Team</span>
+                    <h2>Meet the <span class="hl">research team</span></h2>
+                    <p>Postdoctoral researchers and PhD students pushing the boundaries of clean-energy science.</p>
+                </div>
+                <div class="grid grid-3" data-stagger=".08">
+                    <article class="card team-card pi" data-reveal="up">
+                        <div class="avatar"><img src="../imagespics/indexpics/Zain%20-%20photo.JPG" alt="Prof. Zain H. Yamani" style="object-position:center 35%"></div>
+                        <div>
+                            <span class="team-role"><i class="fa-solid fa-star"></i> Principal Investigator</span>
+                            <h3>Prof. Zain H. Yamani</h3> <div style="display:inline-flex;gap:0.5rem;margin-left:0.5rem;font-size:1.1rem;"><a href="#" title="Scopus"><i class="fa-solid fa-book-open-reader"></i></a><a href="#" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a></div>
+                            <p>Professor at the Department of Physics, KFUPM, and associated with the Interdisciplinary Research Center for Hydrogen Technologies and Carbon Management (IRC-HTCM). Leading research in hydrogen energy, carbon management and advanced energy materials.</p>
+                            <div class="chips"><span class="chip">Hydrogen Technologies</span><span class="chip">Carbon Management</span><span class="chip">Nanotechnology</span><span class="chip chip-gold">IRC-HTCM</span></div>
+                        </div>
+                    </article>
+                    <article class="card team-card" data-reveal="up"><div class="avatar">AA</div><span class="team-role">Postdoctoral Researcher</span><h3>Dr. Anas Ahmed</h3> <div style="display:inline-flex;gap:0.5rem;margin-left:0.5rem;font-size:1.1rem;"><a href="#" title="Scopus"><i class="fa-solid fa-book-open-reader"></i></a><a href="#" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a></div><p>Pd membranes for H₂ separation &amp; electrified steam methane reforming with homogeneous thermal distribution.</p><div class="chips"><span class="chip">Pd Membranes</span><span class="chip">SMR</span><span class="chip">Electrified Reactors</span></div><blockquote>"I want to develop a robust Pd membrane and electrified SMR scalable to industry."</blockquote></article>
+                    <article class="card team-card" data-reveal="up"><div class="avatar">WS</div><span class="team-role">Postdoctoral Researcher</span><h3>Dr. Wirya Sarwana</h3> <div style="display:inline-flex;gap:0.5rem;margin-left:0.5rem;font-size:1.1rem;"><a href="#" title="Scopus"><i class="fa-solid fa-book-open-reader"></i></a><a href="#" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a></div><p>Catalyst design for H₂ via SMR &amp; WGS; direct SRM–WGS in a modified membrane reactor with Aramco on YSZ-protected Pd membranes.</p><div class="chips"><span class="chip">SMR</span><span class="chip">WGS</span><span class="chip">Membrane Reactor</span></div><blockquote>"Develop scalable membrane-based SRM–WGS systems for low-energy, low-cost hydrogen production."</blockquote></article>
+                    <article class="card team-card" data-reveal="up"><div class="avatar">AM</div><span class="team-role">Postdoctoral Researcher</span><h3>Dr. Amr</h3> <div style="display:inline-flex;gap:0.5rem;margin-left:0.5rem;font-size:1.1rem;"><a href="#" title="Scopus"><i class="fa-solid fa-book-open-reader"></i></a><a href="#" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a></div><p>Hydrogen production from oil-shale resources &amp; integrated hydrogen storage systems for improved scalability and efficiency.</p><div class="chips"><span class="chip">Oil Shale</span><span class="chip">H₂ Storage</span><span class="chip">Scalability</span></div><blockquote>"Unravel hydrogen generation in oil shale for scalable domestic production."</blockquote></article>
+                    <article class="card team-card" data-reveal="up"><div class="avatar">ME</div><span class="team-role">Postdoctoral Researcher</span><h3>Dr. Mohamed Elsenety</h3> <div style="display:inline-flex;gap:0.5rem;margin-left:0.5rem;font-size:1.1rem;"><a href="#" title="Scopus"><i class="fa-solid fa-book-open-reader"></i></a><a href="#" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a></div><p>Working on DFT, Molecular Dynamics (MD), and Deep Learning (ML) for catalysis, HER, CO₂, and photoactive materials.</p><div class="chips"><span class="chip">DFT &amp; MD</span><span class="chip">Deep Learning</span><span class="chip">Catalysis &amp; HER</span></div><blockquote>"Applying Deep Learning, DFT, and MD to discover efficient catalysts for HER and photoactive materials."</blockquote></article>
+                    <article class="card team-card" data-reveal="up"><div class="avatar">AA</div><span class="team-role"><span style="letter-spacing: 1.152px;">Postdoctoral Researcher</span></span><h3>Ahmed Esmail Abdelfadeel Aboubakr</h3> <div style="display:inline-flex;gap:0.5rem;margin-left:0.5rem;font-size:1.1rem;"><a href="#" title="Scopus"><i class="fa-solid fa-book-open-reader"></i></a><a href="#" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a></div><p>Focusing on photocatalytic processes and sustainable chemical science and technology for energy applications.</p><div class="chips"><span class="chip">Photocatalysis</span><span class="chip">Nanomaterials</span><span class="chip">Sustainable Chemistry</span></div><blockquote>"Advancing photocatalytic systems to tackle modern energy and environmental challenges."</blockquote></article>
+                    <article class="card team-card" data-reveal="up"><div class="avatar">YP</div><span class="team-role">PhD Candidate</span><h3>Yuda Prima Hardianto</h3> <div style="display:inline-flex;gap:0.5rem;margin-left:0.5rem;font-size:1.1rem;"><a href="#" title="Scopus"><i class="fa-solid fa-book-open-reader"></i></a><a href="#" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a></div><p>Advanced electrocatalysts combining DFT &amp; ML: FeP/NiP/NiFeP and Co/Mn-oxide systems for OER, plus ML-guided HER catalyst screening.</p><div class="chips"><span class="chip">OER</span><span class="chip">DFT</span><span class="chip">ML HER</span></div><blockquote>"I aim to create an ML model that accurately predicts potential HER electrocatalysts."</blockquote></article>
+                    <article class="card team-card" data-reveal="up"><div class="avatar">IJ</div><span class="team-role">PhD Candidate</span><h3>Ibnu Jihad</h3> <div style="display:inline-flex;gap:0.5rem;margin-left:0.5rem;font-size:1.1rem;"><a href="#" title="Scopus"><i class="fa-solid fa-book-open-reader"></i></a><a href="#" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a></div><p>Optimizing Ni–Zn battery cathodes via composite carbon/NiLDH systems; DFT modeling of charge–discharge and capacity prediction.</p><div class="chips"><span class="chip">Ni–Zn Batteries</span><span class="chip">DFT</span><span class="chip">NiLDH</span></div><blockquote>"I want to demonstrate a safe, efficient, and recyclable Ni–Zn battery prototype at lab scale."</blockquote></article>
+                    <article class="card team-card" data-reveal="up"><div class="avatar">MN</div><span class="team-role">PhD Student</span><h3>M. Nauman</h3> <div style="display:inline-flex;gap:0.5rem;margin-left:0.5rem;font-size:1.1rem;"><a href="#" title="Scopus"><i class="fa-solid fa-book-open-reader"></i></a><a href="#" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a></div><p>Perovskite-based electrodes for H₂ production; advanced materials &amp; additive engineering for zinc-ion batteries and electrocatalysis.</p><div class="chips"><span class="chip">Perovskite</span><span class="chip">Zinc-Ion</span><span class="chip">Electrocatalysis</span></div><blockquote>"Developing advanced electrodes that improve hydrogen evolution and zinc-ion battery performance."</blockquote></article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CAPABILITIES ================= -->
+        <section class="section section-alt" id="capabilities">
+            <div class="container" data-tabs>
+                <div class="section-head">
+                    <span class="eyebrow"><i class="fa-solid fa-screwdriver-wrench"></i>Lab Capabilities</span>
+                    <h2>What we <span class="hl">can do</span></h2>
+                    <p>State-of-the-art experimental infrastructure coupled with cutting-edge computational tools.</p>
+                </div>
+                <div class="tabs-wrap">
+                    <div class="tabs" role="tablist">
+                        <button class="tab-btn active" data-tab="tab-exp" id="tab-btn-exp"><i class="fa-solid fa-flask"></i>Experimental</button>
+                        <button class="tab-btn" data-tab="tab-comp" id="tab-btn-comp"><i class="fa-solid fa-laptop-code"></i>Computational</button>
+                        <button class="tab-btn" data-tab="tab-thesis" id="tab-btn-thesis"><i class="fa-solid fa-scroll"></i>Thesis Projects</button>
+                    </div>
+                </div>
+
+                <div class="tab-panel active" id="tab-exp">
+                    <div class="grid grid-4" data-stagger=".08">
+                        <div class="card cap-card" data-reveal="up"><div class="icon-badge sm"><i class="fa-solid fa-vials"></i></div><h3>Synthesis</h3><p>Hydrothermal, sol–gel, impregnation, thin-film, solid state, molten salt, electrodeposition, probe sonication, co-precipitation.</p></div>
+                        <div class="card cap-card" data-reveal="up"><div class="icon-badge sm gold"><i class="fa-solid fa-bolt"></i></div><h3>Electrochemistry</h3><p>LSV, CV, EIS, GCD, chronoamperometry; full battery fabrication and testing.</p></div>
+                        <div class="card cap-card" data-reveal="up"><div class="icon-badge sm"><i class="fa-solid fa-industry"></i></div><h3>Gas &amp; Reactors</h3><p>High P–T batch reactors, in-situ gas injection (H₂, CO₂, CH₄), reforming &amp; gasification studies.</p></div>
+                        <div class="card cap-card" data-reveal="up"><div class="icon-badge sm gold"><i class="fa-solid fa-microscope"></i></div><h3>Characterization</h3><p>XRD, SEM, TEM, XPS, BET, XRF, EDS, FTIR, Raman, TOF-SIMS, TOC, Rock-Eval, GC, MS.</p></div>
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab-comp">
+                    <div class="grid grid-4" data-stagger=".08">
+                        <div class="card cap-card" data-reveal="up"><div class="icon-badge sm"><i class="fa-solid fa-atom"></i></div><h3>DFT Simulations</h3><p>Quantum Espresso and Open-MX for first-principles electronic structure.</p></div>
+                        <div class="card cap-card" data-reveal="up"><div class="icon-badge sm gold"><i class="fa-solid fa-globe"></i></div><h3>Multiphysics</h3><p>COMSOL for coupled transport, reactor simulations and thermal modeling.</p></div>
+                        <div class="card cap-card" data-reveal="up"><div class="icon-badge sm"><i class="fa-solid fa-brain"></i></div><h3>Machine Learning</h3><p>MATLAB regression and scikit-learn pipelines for catalyst screening.</p></div>
+                        <div class="card cap-card" data-reveal="up"><div class="icon-badge sm gold"><i class="fa-solid fa-chart-line"></i></div><h3>Data Visualization</h3><p>Python, LaTeX, Origin and Excel for publication-quality figures.</p></div>
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab-thesis">
+                    <div class="grid grid-3" data-stagger=".1">
+                        <div class="card feature-card" data-reveal="up"><span class="num">01</span><div class="icon-badge"><i class="fa-solid fa-filter"></i></div><h3>Computational Development of Pd Alloy Membranes</h3><p>First-principles and DFT modeling of Pd alloy membranes for high-efficiency hydrogen separation.</p></div>
+                        <div class="card feature-card" data-reveal="up"><span class="num">02</span><div class="icon-badge"><i class="fa-solid fa-sun"></i></div><h3>TMDs for Photocatalytic Water Splitting</h3><p>DFT study of transition-metal dichalcogenide nanostructures to uncover H₂O splitting mechanisms.</p></div>
+                        <div class="card feature-card" data-reveal="up"><span class="num">03</span><div class="icon-badge"><i class="fa-solid fa-battery-half"></i></div><h3>TMD Nanostructures for Metal-Sulfur Batteries</h3><p>First-principles investigation of TMDs as electrodes for next-generation metal-sulfur storage.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PUBLICATIONS ================= -->
+        <section class="section" id="publications">
+            <div class="container" style="max-width:960px">
+                <div class="section-head">
+                    <span class="eyebrow"><i class="fa-solid fa-book-open"></i>Publications</span>
+                    <h2>Selected <span class="hl">works</span></h2>
+                    <p>Peer-reviewed contributions advancing hydrogen, carbon and energy-storage sciences.</p>
+                </div>
+
+                <div class="pub-toolbar" data-reveal="up">
+                    <label class="pub-search" for="pub-search">
+                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                        <input type="search" id="pub-search" placeholder="Search title, author or journal…" autocomplete="off" aria-label="Search publications">
+                    </label>
+                    <div class="pub-filters" role="group" aria-label="Filter publications by topic">
+                        <button type="button" class="filter-btn active" data-filter="all" id="filter-all" aria-pressed="true">All</button>
+                        <button type="button" class="filter-btn" data-filter="hydrogen" id="filter-hydrogen" aria-pressed="false"><i class="fa-solid fa-fire-flame-curved"></i>Hydrogen</button>
+                        <button type="button" class="filter-btn" data-filter="electro" id="filter-electro" aria-pressed="false"><i class="fa-solid fa-bolt"></i>Electrocatalysis</button>
+                        <button type="button" class="filter-btn" data-filter="battery" id="filter-battery" aria-pressed="false"><i class="fa-solid fa-car-battery"></i>Batteries</button>
+                        <button type="button" class="filter-btn" data-filter="talk" id="filter-talk" aria-pressed="false"><i class="fa-solid fa-microphone"></i>Talks</button>
+                    </div>
+                </div>
+                <p class="pub-count" id="pub-count" aria-live="polite"></p>
+
+                <div class="pub-list" id="pub-list">
+                <article class="pub" data-reveal="up" data-tags="hydrogen"><div class="pub-year"><i class="fa-solid fa-file-lines"></i>2024</div><div><h4>Steam reforming of dodecane using Ni-red mud catalyst: A sustainable approach for hydrogen production</h4><p class="authors">L. T. Alfuhaid, G. A. Nasser, R. A. Alabdulhadi, M. Y. Khan, <b>Zain H. Yamani</b>, A. Helal</p><p class="venue">International Journal of Hydrogen Energy <a href="https://doi.org/10.1016/j.ijhydene.2024.05.153" target="_blank" rel="noopener">DOI <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p><div class="chips"><span class="chip">Hydrogen</span><span class="chip">Catalysis</span><span class="chip">SMR</span></div></div></article>
+                <article class="pub" data-reveal="up" data-tags="hydrogen"><div class="pub-year"><i class="fa-solid fa-file-lines"></i>2024</div><div><h4>Preface to the Special Issue on Hydrogen Production, Storage, Application, and Sensing</h4><p class="authors">S. M. A. H. Siddiki, Md. Abdul Aziz, <b>Zain H. Yamani</b></p><p class="venue">Chemistry – An Asian Journal <a href="https://doi.org/10.1002/asia.202400509" target="_blank" rel="noopener">DOI <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p><div class="chips"><span class="chip">H₂ Storage</span><span class="chip">Review</span><span class="chip">Sensing</span></div></div></article>
+                <article class="pub" data-reveal="up" data-tags="electro hydrogen"><div class="pub-year"><i class="fa-solid fa-file-lines"></i>2024</div><div><h4>Identification of Suitable Mesh Size of Commercial Stainless-Steel for Electrochemical Oxygen Evolution Reaction</h4><p class="authors">Y. P. Hardianto, M. A. Aziz, M. M. Mohamed, <b>Zain H. Yamani</b></p><p class="venue">Chemistry – An Asian Journal <a href="https://doi.org/10.1002/asia.202400118" target="_blank" rel="noopener">DOI <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p><div class="chips"><span class="chip">OER</span><span class="chip">Electrocatalysis</span><span class="chip">Stainless Steel</span></div></div></article>
+                <article class="pub" data-reveal="up" data-tags="battery talk"><div class="pub-year talk"><i class="fa-solid fa-microphone"></i>2025</div><div><h4>Enhanced electrochemical performance of aqueous zinc-ion batteries with porous basil-derived carbon and nanostructured MnO₂ composite cathodes</h4><p class="authors">Yamani Research Group</p><p class="venue">Oral presentation — IUPAC 2025, 50th World Chemistry Congress (50WCC)</p><div class="chips"><span class="chip">Zinc-Ion Batteries</span><span class="chip">MnO₂</span><span class="chip">Carbon</span></div></div></article>
+                </div>
+                <div class="pub-empty" id="pub-empty" hidden><i class="fa-solid fa-magnifying-glass"></i><p>No publications match your search.</p><button type="button" class="btn btn-secondary" id="pub-reset"><i class="fa-solid fa-rotate-left"></i>Reset filters</button></div>
+                <div class="center-actions" data-reveal="up">
+                    <a href="Publication%20List%20(Zain%20Yamani_2014).pdf" class="btn btn-secondary" id="pub-list-btn"><i class="fa-solid fa-file-pdf"></i>Full publication list (to 2014)</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= GRANTS & ROADMAP ================= -->
+        <section class="section section-alt" id="roadmap">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow"><i class="fa-solid fa-road"></i>Grants &amp; Roadmap</span>
+                    <h2>From <span class="hl">funding</span> to the future</h2>
+                </div>
+                <div class="grid grid-2" style="max-width:760px;margin:0 auto 4rem" data-stagger=".12">
+                    <div class="card row-card grant-card" data-reveal="up"><div class="icon-badge gold"><i class="fa-solid fa-trophy"></i></div><div><span class="chip">NIDLP · 2023–2024</span><h3>RETI Grant</h3><p>50,000 SAR</p></div></div>
+                    <div class="card row-card grant-card" data-reveal="up"><div class="icon-badge gold"><i class="fa-solid fa-trophy"></i></div><div><span class="chip">NIDLP · 2024–2025</span><h3>RETI Grant</h3><p>50,000 SAR</p></div></div>
+                </div>
+                <div class="timeline">
+                    <div class="tl-item" data-reveal="left"><div class="tl-dot"><i class="fa-solid fa-handshake"></i></div><div class="tl-card"><span class="tl-year">2023</span><h4>First RETI grant · Aramco collaboration</h4><p>Membrane-reactor collaboration with Aramco initiated.</p></div></div>
+                    <div class="tl-item" data-reveal="right"><div class="tl-dot"><i class="fa-solid fa-newspaper"></i></div><div class="tl-card"><span class="tl-year">2024</span><h4>Three high-impact publications</h4><p>Second RETI grant awarded; OER stainless-steel mesh paper published.</p></div></div>
+                    <div class="tl-item" data-reveal="left"><div class="tl-dot"><i class="fa-solid fa-microphone"></i></div><div class="tl-card"><span class="tl-year">2025</span><h4>IUPAC 50WCC oral presentation</h4><p>Scaling Pd membrane prototypes; ML catalyst-prediction model.</p></div></div>
+                    <div class="tl-item" data-reveal="right"><div class="tl-dot"><i class="fa-solid fa-rocket"></i></div><div class="tl-card"><span class="tl-year">Future</span><h4>Pilot plant &amp; deployment</h4><p>Pilot H₂ plant · industrial Ni–Zn battery deployment · CO₂ circular pathways.</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= VISION ================= -->
+        <section class="section" id="vision">
+            <div class="container">
+                <div class="quote-block" data-reveal="zoom">
+                    <p>"We envision a future where clean hydrogen serves as a primary energy source and advanced batteries, reinforced with safe and sustainable materials, drive efficient energy storage — together enabling net-zero chemical industries and a <em>carbon-neutral world</em>."</p>
+                    <cite>— Yamani Research Group</cite>
+                </div>
+                <div class="grid grid-3" style="margin-top:2.5rem" data-stagger=".12">
+                    <div class="card feature-card" data-reveal="up"><div class="icon-badge"><i class="fa-solid fa-rocket"></i></div><h3>Pilot Hydrogen Production</h3><p>A catalytic membrane SRM–WGS tandem system, exploring domestic oil shale as hydrogen source and storage medium.</p></div>
+                    <div class="card feature-card" data-reveal="up"><div class="icon-badge gold"><i class="fa-solid fa-recycle"></i></div><h3>Carbon Circularity</h3><p>Bridging hydrogen production with CO₂/CH₄ utilization for sustainable circular energy pathways.</p></div>
+                    <div class="card feature-card" data-reveal="up"><div class="icon-badge"><i class="fa-solid fa-car-battery"></i></div><h3>Next-Gen Ni–Zn Batteries</h3><p>Optimized composite cathodes, scalable fabrication and pilot trials for renewable and grid applications.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= LEGACY RESEARCH ================= -->
+        <section class="section section-alt" id="history">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow"><i class="fa-solid fa-clock-rotate-left"></i>Research Heritage</span>
+                    <h2>Earlier <span class="hl">research</span> (pre-2015)</h2>
+                    <p>The foundations: luminescent silicon, laser spectroscopy, photochemistry and nanomaterials.</p>
+                </div>
+                <div class="grid grid-3" data-stagger=".1">
+                    <figure class="card figure-card" data-reveal="up"><img src="images%20and%20photos/Si-photoluminescence.jpg" loading="lazy" data-lightbox alt="UV laser through silicon nanocrystallite solution"><figcaption><strong>Light from Silicon Nanocrystallites</strong> — Ph.D., Urbana-Illinois (1993–1999). A UV laser beam through a Si nanocrystallite solution: bright blue emission! <a href="silicon%20nanocrystallites.htm" class="text-link">Read more</a></figcaption></figure>
+                    <figure class="card figure-card" data-reveal="up"><img src="images%20and%20photos/jetlab%20ss1.jpg" loading="lazy" data-lightbox alt="Supersonic jet lab"><figcaption><strong>SO<sub>2</sub> in Supersonic Jets</strong> — KFUPM (2000–2001) with Prof. Fida Al-Adel. <a href="supersonic_jet.htm" class="text-link">Read more</a></figcaption></figure>
+                    <figure class="card figure-card" data-reveal="up"><img src="images%20and%20photos/laser-chem-tech.jpg" loading="lazy" data-lightbox alt="Laser chemistry"><figcaption><strong>Laser Photochemistry</strong> — methane conversion to higher hydrocarbons and photocatalysis with Prof. <a href="http://faculty.kfupm.edu.sa/PHYS/magondal/" class="text-link">M. A. Gondal</a>. <a href="methane_conversion.htm" class="text-link">Read more</a></figcaption></figure>
+                </div>
+                <div class="grid grid-2" style="margin-top:1.5rem" data-stagger=".1">
+                    <div class="card row-card" data-reveal="up"><div class="icon-badge soft"><i class="fa-solid fa-wand-magic-sparkles"></i></div><div><h3>Laser-Induced Breakdown Spectroscopy</h3><p>LIBS for compositional analysis, including non-destructive studies of currency coins.</p></div></div>
+                    <div class="card row-card" data-reveal="up"><div class="icon-badge soft"><i class="fa-solid fa-cubes-stacked"></i></div><div><h3>Functional Nanomaterials</h3><p>Nanomaterials for photocatalysis, gas sensing and oil desulfurization.</p></div></div>
+                </div>
+                <div class="center-actions" data-reveal="up">
+                    <a href="Research-Arabic.html" class="btn btn-secondary" id="research-arabic-btn"><i class="fa-solid fa-language"></i>صفحة الأبحاث بالعربي</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= JOIN / COLLABORATE ================= -->
+        <section class="section section-join" id="join">
+            <div class="container">
+                <div class="cta" data-reveal="zoom">
+                    <div class="cta-text">
+                        <span class="eyebrow eyebrow-light"><span class="dot"></span>Work With Us</span>
+                        <h2>Interested in joining or collaborating?</h2>
+                        <p>We welcome motivated graduate students, postdoctoral researchers and industry partners in hydrogen, catalysis, batteries and computational materials science.</p>
+                    </div>
+                    <div class="cta-actions">
+                        <a href="mailto:zhyamani@kfupm.edu.sa?subject=Yamani%20Research%20Group%20inquiry" class="btn btn-light" id="cta-contact-btn"><i class="fa-solid fa-paper-plane"></i>Get in touch</a>
+                        <a href="#publications" class="btn btn-ghost-light" id="cta-pubs-btn"><i class="fa-solid fa-book-open"></i>Read our work</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <div class="logo"><a href="../index.html"><span class="logo-mark">ZY</span><span class="logo-text"><strong>Dr. Zain Yamani</strong><small>Physics · KFUPM</small></span></a></div>
+                <p>Professor of Physics, King Fahd University of Petroleum &amp; Minerals. Hydrogen technologies, carbon management &amp; energy materials.</p>
+            </div>
+            <div>
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="../research/Research.html"><i class="fa-solid fa-atom"></i>Research</a></li>
+                    <li><a href="../teaching/Teaching.html"><i class="fa-solid fa-chalkboard-user"></i>Teaching</a></li>
+                    <li><a href="../presentations/Presentations.html"><i class="fa-solid fa-person-chalkboard"></i>Talks</a></li>
+                    <li><a href="../gallery/Gallery.html"><i class="fa-solid fa-images"></i>Gallery</a></li>
+                    <li><a href="../personal/Personal%20Information.html"><i class="fa-solid fa-id-badge"></i>Profile</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="../Nanotechnology/Nanotechnology.html"><i class="fa-solid fa-microscope"></i>Nanotechnology</a></li>
+                    <li><a href="../interesting%20link/interesting_physics_links.html"><i class="fa-solid fa-link"></i>Physics Links</a></li>
+                    <li><a href="Publication%20List%20(Zain%20Yamani_2014).pdf"><i class="fa-solid fa-file-pdf"></i>Publication List</a></li>
+                    <li><a href="../Arabic/Arabic.html"><i class="fa-solid fa-language"></i>الصفحة العربية</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:zhyamani@kfupm.edu.sa"><i class="fa-solid fa-envelope"></i>zhyamani@kfupm.edu.sa</a></li>
+                    <li><a href="tel:+966138604363"><i class="fa-solid fa-phone"></i>+966 13 860 4363</a></li>
+                    <li><a href="https://www.kfupm.edu.sa" target="_blank" rel="noopener"><i class="fa-solid fa-location-dot"></i>KFUPM, Dhahran, KSA</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <span>&copy; <span data-year>2026</span> Prof. Zain H. Yamani. All rights reserved.</span>
+            <span>King Fahd University of Petroleum &amp; Minerals</span>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+</body>
+</html>
+
